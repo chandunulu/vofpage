@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VaultOfCodes</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #ffffff, #e6f0ff);
+      color: #333;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .header {
+      height: 60px;
+      background-color: #1e3a8a;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 22px;
+      letter-spacing: 1px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .content {
+      padding: 50px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+
+    .block {
+      width: 360px;
+      min-height: 340px;
+      border-radius: 14px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      overflow: hidden;
+      text-align: left;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: all 0.4s ease;
+      animation: fadeIn 1s ease forwards;
+      background-blend-mode: overlay;
+      border: 2px solid transparent;
+    }
+
+    .block:hover {
+      transform: scale(1.05) translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+      border-color: #1e3a8a;
+      background-blend-mode: multiply;
+    }
+
+    .block::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 0;
+      transition: background 0.3s ease;
+    }
+
+    .block:hover::before {
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    .block * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .block h2 {
+      margin-bottom: 14px;
+      font-size: 20px;
+      font-weight: 600;
+      text-transform: capitalize;
+      line-height: 1.3;
+    }
+
+    .block ul {
+      margin-bottom: 20px;
+      padding-left: 20px;
+    }
+
+    .block ul li {
+      font-size: 15px;
+      margin-bottom: 8px;
+      list-style-type: disc;
+    }
+
+    .block a {
+      background-color: #1e3a8a;
+      padding: 10px 18px;
+      border-radius: 6px;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      display: inline-block;
+    }
+
+    .block a:hover {
+      background-color: #153075;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .web {
+      background-image: url('web.jpg');
+    }
+
+    .python {
+      background-image: url('python.jpg');
+    }
+
+    .ai {
+      background-image: url('ai.jpg');
+    }
+
+    .java {
+      background-image: url('java.jpg');
+    }
+
+    @media (max-width: 700px) {
+      .row {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .block {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    VaultOfCodes Internship Programs
+  </div>
+
+  <div class="content">
+    <div class="row">
+      <div class="block web">
+        <h2>Web Development Internship</h2>
+        <ul>
+          <li>Duration: 1 to 2 months</li>
+          <li>Mode: Virtual (Work from Home)</li>
+          <li>Stipend: Based on performance</li>
+          <li>Start Date: June 2025</li>
+        </ul>
+        <a href="https://www.vaultofcodes.in/courses/506813">Learn More</a>
+      </div>
+
+      <div class="block python">
+        <h2>Python Programming Internship</h2>
+        <ul>
+          <li>Duration: 1 to 2 months</li>
+          <li>Mode: Virtual (Work from Home)</li>
+          <li>Stipend: Based on performance</li>
+          <li>Start Date: June 2025</li>
+        </ul>
+        <a href="https://www.vaultofcodes.in/courses/506722">Learn More</a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="block ai">
+        <h2>App Development Internship</h2>
+        <ul>
+          <li>Duration: 1 to 2 months</li>
+          <li>Mode: Virtual (Work from Home)</li>
+          <li>Stipend: Based on performance</li>
+          <li>Start Date: June 2025</li>
+        </ul>
+        <a href="https://www.vaultofcodes.in/courses/506806">Learn More</a>
+      </div>
+
+      <div class="block java">
+        <h2>Java Programming Internship</h2>
+        <ul>
+          <li>Duration: 1 to 2 months</li>
+          <li>Mode: Virtual (Work from Home)</li>
+          <li>Stipend: Based on performance</li>
+          <li>Start Date: June 2025</li>
+        </ul>
+        <a href="https://www.vaultofcodes.in/courses/506804">Learn More</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
